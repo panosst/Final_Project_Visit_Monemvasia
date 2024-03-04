@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+#pageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color: #d8b4a0;
+ }
+section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+    background-color: #DBD3D8;
+
+}
+.container{
+    height: 800px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    
+
+}
+.card{
+    width: 80px;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgb(0,0,0,0.8);
+
+}
+.row{
+    color: aliceblue;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.icon{
+    background: #333;
+    color: aliceblue;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+input{
+    display: none;
+}
+input:checked + label{
+    width: 600px;
+}
+input:checked + label .text{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+.card[for = "card1"]{
+    background-image: url(/images/option1.jpg);
+}
+.card[for = "card2"]{
+    background-image: url(/images/option2.jpg);
+}
+.card[for = "card3"]{
+    background-image: url(/images/option1.jpg);
+}
+.card[for = "card4"]{
+    background-image: url(/images/option2.jpg);
+}
+.card[for = "card5"]{
+    background-image: url(/images/option1.jpg);
+}
+.card[for = "card6"]{
+    background-image: url(/images/option2.jpg);
+}
+

@@ -1,10 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visit Monemvasia</title>
+    <link rel="stylesheet" href="styles/contactStyle.css">
   </head>
-  <body></body>
+
+  <body>
+    <header></header>
+    <div id="pageTitle">
+      <h2>ΕΠΙΚΟΙΝΩΝΙΑ</h2>
+    </div>
+    <section>
+      <div id="information">
+        <h3>ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ</h3>
+        <ul>
+          <li>
+            <p>Δήμος Μονεμβασιάς</p>
+          </li>
+          <li>
+            <p>Διεύθυνση: Πλατεία Παναγίας, Μονεμβασιά, Τ.Κ. 23070, Ελλάδα</p>
+          </li>
+          <li>
+            <p>Τηλέφωνο: +30 27320 61000</p>
+          </li>
+          <li>
+            <p>Ηλεκτρονικό Ταχυδρομείο: info@monemvasia.gr</p>
+          </li>
+          <li><a href="https://monemvasia.gr">Δημος Μονεμβασιάς</a></li>
+        </ul>
+      </div>
+      <form action="#" class="form" id="contactForm">
+        <h3>ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ</h3>
+        <div class="fullName">
+          <div class="input-area">
+            <label for="">ΟΝΟΜΑ *</label>
+            <input type="text" placeholder=" ΟΝΟΜΑ" id="first-name" oninput="firtsNameValidation()" />
+            <span id="error1"></span>
+          </div>
+          <div class="input-area">
+            <label for="">ΕΠΙΘΕΤΟ *</label>
+            <input type="text" placeholder=" ΕΠΙΘΕΤΟ" id="last-name" oninput="lastNameValidation()" />
+            <span id="error2"></span>
+          </div>
+        </div>
+        <div class="mail">
+          <div class="input-area">
+            <label for="">E-mail *</label>
+            <input type="text" placeholder="E-mail address" id="e_mail" oninput="emailValidation()" />
+            <span id="error3"></span>
+          </div>
+          <div class="input-area">
+            <label for="">Confirm your E-mail *</label>
+            <input type="text" placeholder="Confirm your E-mail address" id="confirm" oninput="confirmValidation()" />
+            <span id="error4"></span>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="input-area">
+            <label for="">ΤΗΛΕΦΩΝΟ *</label>
+            <input type="numeric" placeholder="ΤΗΛΕΦΩΝΟ" id="phone-number" oninput="phoneValidation()" />
+            <span id="error5"></span>
+          </div>
+        </div>
+        <div class="address">
+          <div class="input-area">
+            <label for="">ΔΙΕΥΘΥΝΣΗ *</label>
+            <input type="text" placeholder="ΔΙΕΥΘΥΝΣΗ" id="address-input" oninput="addressValidation()" />
+            <span id="error6"></span>
+          </div>
+          <div class="city">
+            <div class="input-area">
+              <label for=""> ΠΟΛΗ *</label>
+              <input type="text" placeholder="ΠΟΛΗ" id="City" oninput="cityCapitalized()" />
+              <span id="error7"></span>
+            </div>
+            <div class="input-area">
+              <label for=""> ΤΑΧΥΔΡΟΜΙΚΟΣ ΚΩΔΙΚΑΣ *</label>
+              <input type="text" placeholder="ΤΑΧΥΔΡΟΜΙΚΟΣ ΚΩΔΙΚΑΣ" id="postal-code" oninput="postalValidation()" />
+              <span id="error8"></span>
+            </div>
+          </div>
+        </div>
+        <textarea rows="4" cols="50" name="comment" form="contactForm">ΠΛΗΚΤΡΟΛΟΓΗΣΤΕ ΤΟ ΜΗΝΥΜΑ ΣΑΣ ΕΔΩ...</textarea>
+        <p>*υποχρεωτικο πεδιο</p>
+        <div class="sub"><button>Submit</button></div>
+        <span id="note"></span>
+      </form>
+    </section>
+    <div id="google-maps">
+      <span>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1599.7303645591571!2d23.0546157889145!3d36.68746509395166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149e41d1e40eaa5f%3A0xdb7d0a06b9f3bb31!2zzpzOv869zrXOvM6yzrHPg865zqw!5e0!3m2!1sel!2sgr!4v1701714263691!5m2!1sel!2sgr" width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </span>
+    </div>
+    <footer></footer>
+    <script src="scripts/contactForm.js"></script>
+  </body>
+
 </html>

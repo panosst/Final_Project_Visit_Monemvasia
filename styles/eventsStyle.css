@@ -1,0 +1,88 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100vh;
+}
+
+#pageTitle {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 20%;
+   background-color: #d8b4a0;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #dbd3d8;
+   padding-top: 6rem;
+}
+
+section {
+   display: flex;
+   flex-direction: column;
+   row-gap: 15rem;
+   max-width: 80%;
+}
+
+#winter,
+#spring,
+#summer,
+#autumn {
+   position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#winter {
+   background-image: url("/images/parallax1.jpg");
+   min-height: 800px;
+}
+
+#spring {
+   background-image: url("/images/parallax2.jpg");
+   min-height: 800px;
+}
+
+#summer {
+   background-image: url("/images/parallax3.jpg");
+   min-height: 800px;
+}
+
+#autumn {
+   background-image: url("/images/parallax4.jpg");
+   min-height: 800px;
+}
+
+#calendar {
+   height: 200px;
+}
+
+.text {
+   background-color: white;
+   z-index: 3;
+   padding: 12rem;
+}
+.text ul li {
+   list-style: none;
+}
+.text h3{
+   margin-bottom: 1rem;
+   
+}
+#calendar{
+text-align: center;
+background-color: #d8b4a0;
+}
+#calendar label,select{
+   font-size: 2rem;
+   
+}
