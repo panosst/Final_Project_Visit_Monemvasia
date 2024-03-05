@@ -160,8 +160,9 @@
           </div>
         </div>
         <div id="calendar">
+          <h5>Για να δειτε ποιο αναλυτικα τα δρωμενα του δημου </h5>
           <label for="month">Επιλεξτε μήνα</label>
-          <select name="month" id="month" onchange="Smonth()">
+          <select name="month" id="month" onchange="getData()">
             <option value="default">----</option>
             <option value="jan">January</option>
             <option value="feb">February</option>
@@ -176,12 +177,18 @@
             <option value="nov">November</option>
             <option value="dec">December</option>
           </select>
+          <div id="textArea">
+            <ol id="drom">
+         
+            </ol>
+          </div>
         </div>
-        <div id="textArea"></div>
+       
       </section>
     </main>
     <footer>
     </footer>
+    <script src="scripts/events.js"></script>
   </body>
 
 </html>

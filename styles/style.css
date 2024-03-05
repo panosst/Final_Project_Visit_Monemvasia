@@ -5,7 +5,7 @@
 }
 
 #arrow {
-  color: rgba(67, 66, 66, 0.656);
+  color: #d8b4a0;
   position: fixed;
   z-index: 10;
   width: 56px;
@@ -47,8 +47,8 @@ header {
 }
 
 .socialMedia a {
-  background-color: #D8B4A0;
-  color: black;
+  background-color: #d8b4a0;
+  color: #333;
   border: none;
   font-size: 20px;
   width: 50px;
@@ -58,15 +58,18 @@ header {
   justify-content: center;
   align-items: center;
 }
-body{
-  background-color: #DBD3D8;
 
+body {
+  background-color: #dbd3d8;
+}
+
+p {
+  font-family: Inter;
 }
 
 section {
   display: grid;
   row-gap: 8rem;
-  
 }
 
 /* carousel */
@@ -76,9 +79,6 @@ section {
   gap: 1rem;
   justify-content: center;
   cursor: pointer;
-  /* position: absolute; */
-  /* bottom: 15px;
-    align-items: center; */
   width: 100%;
 }
 
@@ -96,10 +96,6 @@ section {
   align-items: center;
 }
 
-#hero-image-container img {
-  width: 100%;
-}
-
 /* styling the buttons prev , next */
 .prev,
 .next {
@@ -109,11 +105,11 @@ section {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: ghostwhite;
+  color: white;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
-  background-color: grey;
+  background-color: #d8b4a0;
 }
 
 /* set the location of the prev and next buttton  */
@@ -132,6 +128,7 @@ section {
 }
 
 #hero-image-container img {
+  width: 100%;
   height: 90vh;
 }
 
@@ -148,9 +145,8 @@ section {
   color: white;
   width: 50px;
   height: 50px;
-  background-color:#D8B4A0;
+  background-color: #d8b4a0;
   border-radius: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -160,6 +156,7 @@ section {
 }
 
 #stop {
+  display: flex;
   left: 50%;
 }
 
@@ -177,7 +174,7 @@ section {
 }
 
 #slowDown {
-  display: block;
+  display: flex;
 }
 
 #speedUp {
@@ -194,7 +191,6 @@ section {
 
 .hintMonemvasia p {
   width: 55%;
-  font-family: Inter;
 }
 
 .hintMonemvasia h3 {
@@ -205,7 +201,7 @@ section {
   display: flex;
   flex-direction: column;
   row-gap: 4rem;
-  padding: 0 10rem 0 10rem;
+  padding: 8rem 10rem 8rem 10rem;
   background-color: white;
 }
 
@@ -241,6 +237,11 @@ p.text {
   max-width: 400px;
 }
 
+.small-image a {
+  text-decoration: none;
+  color: #333;
+}
+
 /* information bar */
 #info-bar {
   display: flex;
@@ -251,6 +252,16 @@ p.text {
 #map iframe {
   width: 500px;
   height: 500px;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+  font-size: 1rem;
+  height: 500px;
+  background-color: white;
 }
 
 /* social-phots */
@@ -270,7 +281,7 @@ p.text {
 #photos iframe {
   max-width: 400px;
   background-color: white;
-  height:100%;
+  height: 100%;
 }
 
 #sendUs {
@@ -280,7 +291,6 @@ p.text {
   justify-content: center;
   align-items: center;
 }
-
 
 #social ul {
   display: flex;
@@ -293,49 +303,60 @@ p.text {
 #social ul li {
   list-style: none;
 }
-#social ul li a{
-  text-decoration: none;
-  color:#223843 ;
 
+#social ul li a {
+  text-decoration: none;
+  color: #223843;
 }
 
-#social ul li a span{
+#social ul li a span {
   display: flex;
   column-gap: 2rem;
   transition: all 0.3s ease-out;
   width: 4rem;
   overflow: hidden;
 }
-#social ul li a span:hover{
+
+#social ul li a span:hover {
   width: 30rem;
 }
 
-  
-
-
-
-
 footer {
-  margin-top: 15rem;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  justify-content: center;
   padding: 3rem;
-  background-color:#223843;
+  background-color: #223843;
   color: white;
+}
+
+#logo-footer {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#informations {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact {
+  width: 20%;
 }
 
 #aboutUs {
   display: flex;
-  column-gap: 7rem;
-  justify-content: space-between;
   padding-top: 1rem;
-
+  justify-content: space-between;
 }
 
 #informations ul li {
   list-style: none;
+  padding-top: 1rem;
 }
 
 #informations ul li a {
@@ -343,35 +364,39 @@ footer {
   color: white;
 }
 
+#contact ul {
+  padding-bottom: 1rem;
+}
+
 #contact ul li {
   list-style: none;
-  padding-top: 2px;
+  padding-top: 1rem;
 }
 
 #contact ul li a {
   text-decoration: none;
   color: white;
- 
 }
+
 /* svg icon */
-#first{
+#first {
   animation: icon 2s infinite linear;
   transform-origin: center;
-  transform-box: fill-box ;
+  transform-box: fill-box;
 }
-#third{
+
+#third {
   animation: icon 1s infinite linear;
   transform-origin: center;
-  transform-box: fill-box ;
-}
-@keyframes icon{
-  from{
-      transform: rotateZ(0deg);
-  }
-  to{
-      transform: rotateZ(360deg);
-  }
+  transform-box: fill-box;
 }
 
+@keyframes icon {
+  from {
+    transform: rotateZ(0deg);
+  }
 
-
+  to {
+    transform: rotateZ(360deg);
+  }
+}

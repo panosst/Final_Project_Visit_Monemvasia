@@ -10,7 +10,7 @@ showSlides();
 // with this function user can increase the time for the  next picture
 function increaseTheTimeForTheNextImage() {
   if (milliseconds >= 5000) {
-    speedUp.style.display = "block";
+    speedUp.style.display = "flex";
   }
   if (milliseconds >= 9000) {
     slowDown.style.display = "none";
@@ -22,10 +22,10 @@ function increaseTheTimeForTheNextImage() {
 function decreaseTheTimeForTheNextImage() {
   if (milliseconds <= 6000) {
     speedUp.style.display = "none";
-    slowDown.style.display = "block";
+    slowDown.style.display = "flex";
   }
   if (milliseconds <= 10000) {
-    slowDown.style.display = "block";
+    slowDown.style.display = "flex";
   }
   milliseconds -= 1000;
   console.log(milliseconds);
@@ -66,13 +66,13 @@ play.style.display = "none";
 function playSlide() {
   slideInterval = setTimeout(showSlides, milliseconds);
   play.style.display = "none";
-  stop.style.display = "block";
+  stop.style.display = "flex";
 }
 // this fuction stop autoplay onclick
 function stopSlide() {
   clearTimeout(slideInterval);
   stop.style.display = "none";
-  play.style.display = "block";
+  play.style.display = "flex";
 }
 // this function drive the user to the previus image onclick
 function prevSlide() {

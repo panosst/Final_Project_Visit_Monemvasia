@@ -49,11 +49,14 @@ form h3 {
     display: flex;
     flex-direction: column;
     row-gap: 3px;
+    margin-bottom: 0.5rem;
+}
+.input-area span{
+    margin-bottom: 0.5rem;
 }
 
 input {
     height: 2rem;
-    margin-bottom: 0.5rem;
 }
 
 .sub {
@@ -65,7 +68,7 @@ input {
 
 .sub button {
     height: 2rem;
-    width: 50%;
+    width: 100%;
     background-color: #D8B4A0;
 
 }
