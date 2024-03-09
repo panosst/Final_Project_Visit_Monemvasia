@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px; 
+    position: relative;
+  }
+  header{
+    max-width: 768px;
+    height: 4rem;
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    gap: 2rem;
+  
+
+  }
+  #navbar{
+    display: none;
+  }
+  .socialMedia{
+    display: none;
+  }
+  .burgerMenu{
+    display: block;
+    font-size: 2rem;
+
+  }
+  #close{
+    display: none;
+  }
+  #mediaNavbar{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 6rem;
+    z-index: 100;
+    background-color: white;
+  
+  }
+
+  #mediaNavbar li {
+    list-style: none;
+    padding: 2rem;
+
+  }
+  #mediaNavbar li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+  }
+  .socialMediaBurger {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .socialMediaBurger a {
+    background-color: #d8b4a0;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #hero{
+    max-width: 768px;
+  }
+  .thumbnails img{
+    width: 100px;
+    height: 100px;
+  }
+  section{
+    max-width: 768px;
+  }
+  .hintMonemvasia{
+    max-width: 768px;
+   
+  }
+  .hintMonemvasia h3{
+    width: 80%;
+  }
+  .hintMonemvasia p{
+    width: 80%;
+  }
+
+  #option-cards{
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+     
+  }
+  .small-image img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  #info-bar{
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  #photos{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    height: 600px;
+  }
+  #photos iframe{
+    height: 500px;
+    max-width: 200px;
+  }
+
+  #sendUs{
+    max-width: 768px;
+  }
+  .backToTop{
+    display: none;
+  
+  }
+  #hintsRitsos{
+    max-width: 768px;
+    padding: 8rem 2rem 8rem 2rem;
+
+  }
+  #sendUs{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  #sendUs h2{
+    
+    font-size: 1rem;
+  }
+  #aboutUs{
+    padding-right: 3rem;
+  }
+  #weather {
+    width:500px ;
+  }
+}
+@media screen and (max-width: 390px) {
+
+#hero{
+  max-width: 390px;
+  
+}
+#hero-image-container{
+  height: 50vh;
+}
+#hero-image-container img{
+  height: 100%;
+
+}
+.hintMonemvasia{
+  max-width: 390px;
+
+}
+#option-cards{
+  max-width: 390px;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+#info-bar{
+  max-width: 390px;
+}
+#map{
+  max-width: 390px;
+}
+#map iframe{
+  max-width: 390px;
+}
+#hintsRitsos{
+  max-width: 390px;
+
+}
+.hint{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hint img{
+  max-width: 350px;
+}
+#sendUs{
+  max-width: 390px;
+  text-align: center;
+
+}
+#aboutUs{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  max-width: 390px;
+  justify-content: center;
+ 
+}
+#contact{
+  width: 100%;
+}
+#informations{
+  width: 100%;
+  align-items: start;
+}
+#photos{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+  height: 1600px;
+}
+#photos iframe{
+  max-width: 380px;
+  max-height: 500px;
+}
+#weather {
+  width:100% ;}
+
+}

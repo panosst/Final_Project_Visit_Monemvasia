@@ -16,6 +16,12 @@
   cursor: pointer;
   display: none;
 }
+.burgerMenu{
+  display: none;
+}
+#mediaNavbar{
+  display: none;
+}
 
 header {
   display: flex;
@@ -219,6 +225,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  row-gap: 1rem;
 }
 
 p.text {
@@ -290,6 +297,12 @@ p.text {
   row-gap: 2rem;
   justify-content: center;
   align-items: center;
+  background-color: #d8b4a0;
+  padding: 3rem 0 3rem 0;
+}
+#sendUs h2{
+  
+  font-size: 1rem;
 }
 
 #social ul {

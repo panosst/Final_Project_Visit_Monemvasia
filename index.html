@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visit Monemvasia</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles/responsiveStyle.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +18,19 @@
     <!-- βελακι για την επιστροφη στο πανω μερος της σελιδας -->
     <div class="backToTop">
       <a href="#" id="arrow"><span><i class="fa-regular fa-circle-up"></i></span></a>
+    </div>
+    <div id="mediaNavbar">
+      <ul>
+        <li><a href="index.html">ΑΡΧΙΚΗ</a></li>
+        <li><a href="history.html">ΙΣΤΟΡΙΑ</a></li>
+        <li><a href="landmarks.html">ΑΞΙΟΘΕΑΤΑ</a></li>
+        <li><a href="events.html">ΔΡΩΜΕΝΑ</a></li>
+        <li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+      </ul>
+      <div class="socialMediaBurger">
+        <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+        <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+      </div>
     </div>
     <header>
       <a href="index.html">
@@ -38,6 +52,10 @@
       <div class="socialMedia">
         <a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a>
         <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+      </div>
+      <div class="burgerMenu">
+        <a onclick="show()"><span id="open"><i class="fa-solid fa-bars"></i></span></a>
+        <a onclick="hide()"><span id="close"><i class="fa-solid fa-xmark-large"></i></span></a>
       </div>
     </header>
     <section>
@@ -75,8 +93,8 @@
           <a href="history.html">
             <img src="images/option2.jpg" alt="foto" />
             <div class="image-text">
-              <h1>Η ιστορια της μονεμβασιας</h1>
-              <p>ξεκινα το</p>
+              <h1>Η ιστορια </h1>
+              <p>μαθε περισσοτερα ...</p>
             </div>
           </a>
         </div>
@@ -86,7 +104,7 @@
             <img src="images/option1.jpg" alt="foto" />
             <div class="image-text">
               <h1>Η διασκεδαση</h1>
-              <p>ξεκινα το</p>
+              <p>μαθε περισσοτερα ...</p>
             </div>
           </a>
         </div>
@@ -96,7 +114,7 @@
             <img src="images/option3.jpg" alt="foto" />
             <div class="image-text">
               <h1>Τα δρωμενα</h1>
-              <p>ξεκινα το</p>
+              <p>μαθε περισσοτερα ...</p>
             </div>
           </a>
         </div>
@@ -213,6 +231,7 @@
     <script src="scripts/carouseljs.js"></script>
     <script src="scripts/localTime.js"></script>
     <script src="scripts/showArrow1.js"></script>
+    <script src="scripts/showMediaNavbar.js"></script>
   </body>
 
 </html>
