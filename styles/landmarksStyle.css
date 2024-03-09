@@ -80,10 +80,13 @@ body{
     height: 20%;
     background-color: #d8b4a0;
  }
+ h3{
+padding: 8rem;
+ }
 section{
     display: flex;
     flex-direction: column;
-    row-gap: 10rem;
+    row-gap: 2rem;
     background-color: #DBD3D8;
 
 }
@@ -133,6 +136,12 @@ section{
     transform: translateY(30px);
     transition-delay: .3s;
     transition: all .3s ease;
+    
+}
+.text h4{
+  background-color: #333;
+  width: 60%;
+  text-align: center;
 }
 input{
     display: none;
@@ -151,16 +160,16 @@ input:checked + label .text{
     background-image: url(/images/option2.jpg);
 }
 .card[for = "card3"]{
-    background-image: url(/images/option1.jpg);
+    background-image: url(/images/option4.jpg);
 }
 .card[for = "card4"]{
-    background-image: url(/images/option2.jpg);
+    background-image: url(/images/option5.jpg);
 }
 .card[for = "card5"]{
-    background-image: url(/images/option1.jpg);
+    background-image: url(/images/option6.jpg);
 }
 .card[for = "card6"]{
-    background-image: url(/images/option2.jpg);
+    background-image: url(/images/option7.jpg);
 }
 footer {
     display: flex;
