@@ -78,6 +78,9 @@ header{
     max-width: 100%;
     min-height: 1300px;
 }
+.history {
+  padding: 10rem 2rem 10rem 2rem;
+}
 #aboutUs{
     padding-right: 3rem;
   }
@@ -116,6 +119,19 @@ header{
    .story{
     padding: 1rem;
    }
+   .history{
+    padding:10rem 1rem 10rem 1rem;
+   }
+   .group{
+   flex-direction: column;
+    gap: 2rem;
+   
+  }
+  .group img{
+    width: 360px;
+    height: 500px;
+  }
+
    #aboutUs{
     display: flex;
     flex-direction: column;

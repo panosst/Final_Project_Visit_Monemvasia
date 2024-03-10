@@ -310,7 +310,7 @@ p.text {
   column-gap: 3rem;
   justify-content: center;
   margin-top: 2rem;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 #social ul li {
@@ -326,7 +326,7 @@ p.text {
   display: flex;
   column-gap: 2rem;
   transition: all 0.3s ease-out;
-  width: 4rem;
+  width: 3rem;
   overflow: hidden;
 }
 

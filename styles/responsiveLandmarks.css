@@ -74,5 +74,79 @@
     }
     #aboutUs{
         padding-right: 3rem;
+    }
+      .imageGallery{
+        grid-template-columns: auto auto ;
       }
+      .img1 :hover:hover{
+        scale: 1.5;
+        transform: translateX(50px);
+      }
+      .img3 :hover:hover{
+        scale: 1.5;
+        transform: translateX(50px);
+      }
+      .img5 :hover:hover{
+        scale: 1.5;
+        transform: translateX(50px);
+      }
+      .img2 :hover:hover{
+        scale: 1.5;
+        transform: translateX(-50px);
+      }
+      .img4 :hover:hover{
+        scale: 1.5;
+        transform: translateX(-50px);
+      }
+      .img6 :hover:hover{
+        scale: 1.5;
+        transform: translateX(-50px);
+      }
+
+}
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 390px; 
+  }
+  .container{
+    height: 3000px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .card{
+    width: 360px;
+    height: 500px;
+    
+  }
+  input:checked + label {
+    width: 360px;
+
+
+  }
+  .imageGallery {
+    grid-template-columns: auto  ;
+
+  }
+  .text h4 {
+    text-align: start;
+  }
+  #smallText {
+    padding: 2rem;
+  }
+  #aboutUs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    max-width: 390px;
+    justify-content: center;
+    
+  }
+  #contact{
+    width: 100%;
+  }
+  #informations{
+    width: 100%;
+    align-items: start;
+  }
 }

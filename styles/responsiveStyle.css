@@ -18,6 +18,7 @@
   
 
   }
+ 
   #navbar{
     display: none;
   }
@@ -127,10 +128,7 @@
   #sendUs{
     max-width: 768px;
   }
-  .backToTop{
-    display: none;
-  
-  }
+ 
   #hintsRitsos{
     max-width: 768px;
     padding: 8rem 2rem 8rem 2rem;

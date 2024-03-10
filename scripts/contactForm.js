@@ -40,7 +40,7 @@ function firtsNameValidation() {
     } else {
         field1.style.borderColor = "red";
         error1.innerText = "Invalid";
-        // error1.style.background = "red";
+        error1.style.color = "red";
         error1.style.display = "block";
         cod1 = false;
     }
@@ -58,7 +58,7 @@ function lastNameValidation() {
     } else {
         field2.style.borderColor = "red";
         error2.innerText = "Invalid";
-        error2.style.background = "red";
+        error2.style.color = "red";
         error2.style.display = "block";
         cod2 = false;
     }
@@ -75,7 +75,7 @@ function emailValidation() {
     } else {
         field3.style.borderColor = "red";
         error3.innerText = "Invalid { Email address it will be like example@..mail.com }";
-        error3.style.background = "red";
+        error3.style.color = "red";
         error3.style.display = "block";
         cod3 = false;
     }
@@ -91,7 +91,7 @@ function confirmValidation() {
     } else {
         field4.style.borderColor = "red";
         error4.innerText = "Invalid { Confirm value it is Not identical with  E-mail value }";
-        error4.style.background = "red";
+        error4.style.color = "red";
         error4.style.display = "block";
         cod4 = false;
     }
@@ -108,7 +108,7 @@ function phoneValidation() {
     } else {
         field5.style.borderColor = "red";
         error5.innerText = "Invalid {Phone value Must be a 10 digit number}";
-        error5.style.background = "red";
+        error5.style.color = "red";
         error5.style.display = "block";
         cod5 = false;
     }
@@ -126,7 +126,7 @@ function cityCapitalized() {
     } else {
         field7.style.borderColor = "red";
         error7.innerText = "Invalid {Please check your City value}";
-        error7.style.background = "red";
+        error7.style.color = "red";
         error7.style.display = "block";
         cod7 = false;
     }
@@ -153,7 +153,7 @@ function addressValidation() {
     if (field6.value.length == 0) {
         field6.style.borderColor = "red";
         error6.innerText = "The field is empty";
-        error6.style.background = "red";
+        error6.style.color = "red";
         error6.style.display = "block";
         cod6 = false;
     } else {
@@ -171,10 +171,10 @@ function handleSubmit(event) {
     event.preventDefault(); // Stop prevent form submission event (HTML)
     console.log(field.length);
     for (let i = 0; i < field.length; i++) {
-        if (field[i].value.length == 0  ) {
+        if (field[i].value.length == 0) {
             field[i].style.borderColor = "red";
             error[i].innerText = "The field is empty";
-            // error[i].style.background = "red";
+            error[i].style.color = "red";
             error[i].style.display = "block";
             codition[i] = false;
             console.log(codition[i]);
@@ -186,7 +186,7 @@ function handleSubmit(event) {
     }
     // the check the codition of the inputs if alla it ok dispay a welll done message if else drive the use back to check the input again
     const noteArea = document.querySelector("#note");
-    if (cod1  && cod2  && cod3  && cod4  && cod5  && cod6  && cod7  && cod8 ) {
+    if (cod1 && cod2 && cod3 && cod4 && cod5 && cod6 && cod7 && cod8) {
         noteArea.innerText = "WELL DONE YOUR FORM IS READY";
         noteArea.style.color = "green";
     } else {

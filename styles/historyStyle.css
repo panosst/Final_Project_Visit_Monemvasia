@@ -170,6 +170,24 @@ section{
     position: relative;
     border-radius: 6px;
   }
+  .history {
+    display: flex;
+    padding: 10rem 
+  }
+  .group{
+    display: flex;
+    gap: 2rem;
+  
+  }
+  .group img{
+    width: 500px;
+    height: 500px;
+  }
+  .group div {
+    display: flex;
+    align-items: center;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
