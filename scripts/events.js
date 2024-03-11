@@ -62,7 +62,7 @@ async function getData() {
   // dom munipulation creates the li of ul
   for (i = 0; i < monthIs.length; i++) {
     let li = document.createElement("li");
-    let descript = document.createTextNode("Ημερα & ωρα : " + monthIs[i].date + "  Τοπος : " + monthIs[i].place + "  Περιγραφη : " + monthIs[i].description);
+    let descript = document.createTextNode("Ημερα & ωρα : " + monthIs[i].date + "  Τοπος : " + monthIs[i].place + "  "+"  Περιγραφη : " + monthIs[i].description);
     li.appendChild(descript);
     ul.appendChild(li);
   }
