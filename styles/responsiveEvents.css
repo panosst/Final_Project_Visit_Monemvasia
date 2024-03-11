@@ -89,22 +89,3 @@
   }
 }
 
-/* styles the page when the width is 390px and less */
-@media screen and (max-width: 390px) {
-  #aboutUs {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4rem;
-    max-width: 390px;
-    justify-content: center;
-  }
-
-  #contact {
-    width: 100%;
-  }
-
-  #informations {
-    width: 100%;
-    align-items: start;
-  }
-}
