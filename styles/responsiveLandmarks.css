@@ -1,151 +1,168 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@media screen and (max-width: 768px) {
-    body {
-      max-width: 768px; 
-      position: relative;
-    }
-    header{
-      max-width: 768px;
-      height: 4rem;
-      display: flex;
-      padding: 3rem;
-      align-items: center;
-      gap: 2rem;
-    
-  
-    }
-    #navbar{
-      display: none;
-    }
-    .socialMedia{
-      display: none;
-    }
-    .burgerMenu{
-      display: block;
-      font-size: 2rem;
-  
-    }
-    #close{
-      display: none;
-    }
-    #mediaNavbar{
-      display: none;
-      position: absolute;
-      right: 0;
-      top: 6rem;
-      z-index: 100;
-      background-color: white;
-    
-    }
-  
-    #mediaNavbar li {
-      list-style: none;
-      padding: 2rem;
-  
-    }
-    #mediaNavbar li a{
-      text-decoration: none;
-      font-size: 2rem;
-      color: black;
-    }
-    .socialMediaBurger {
-      display: flex;
-      align-items: center;
-      column-gap: 1rem;
-      padding: 2rem;
-    }
-    
-    .socialMediaBurger a {
-      background-color: #d8b4a0;
-      color: #333;
-      border: none;
-      font-size: 20px;
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-    }
-    #aboutUs{
-        padding-right: 3rem;
-    }
-      .imageGallery{
-        grid-template-columns: auto auto ;
-      }
-      .img1 :hover:hover{
-        scale: 1.5;
-        transform: translateX(50px);
-      }
-      .img3 :hover:hover{
-        scale: 1.5;
-        transform: translateX(50px);
-      }
-      .img5 :hover:hover{
-        scale: 1.5;
-        transform: translateX(50px);
-      }
-      .img2 :hover:hover{
-        scale: 1.5;
-        transform: translateX(-50px);
-      }
-      .img4 :hover:hover{
-        scale: 1.5;
-        transform: translateX(-50px);
-      }
-      .img6 :hover:hover{
-        scale: 1.5;
-        transform: translateX(-50px);
-      }
 
-}
+/* styles the page when the width is 768px and less */
 @media screen and (max-width: 768px) {
   body {
-    max-width: 390px; 
+    max-width: 768px;
+    position: relative;
   }
-  .container{
+
+  header {
+    max-width: 768px;
+    height: 4rem;
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .socialMedia {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+    font-size: 2rem;
+  }
+
+  #close {
+    display: none;
+  }
+
+  #mediaNavbar {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 6rem;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #mediaNavbar li {
+    list-style: none;
+    padding: 2rem;
+  }
+
+  #mediaNavbar li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+  }
+
+  .socialMediaBurger {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 2rem;
+  }
+
+  .socialMediaBurger a {
+    background-color: #d8b4a0;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #aboutUs {
+    padding-right: 3rem;
+  }
+
+  .imageGallery {
+    grid-template-columns: auto auto;
+  }
+
+  .img1 :hover:hover {
+    scale: 1.5;
+    transform: translateX(50px);
+  }
+
+  .img3 :hover:hover {
+    scale: 1.5;
+    transform: translateX(50px);
+  }
+
+  .img5 :hover:hover {
+    scale: 1.5;
+    transform: translateX(50px);
+  }
+
+  .img2 :hover:hover {
+    scale: 1.5;
+    transform: translateX(-50px);
+  }
+
+  .img4 :hover:hover {
+    scale: 1.5;
+    transform: translateX(-50px);
+  }
+
+  .img6 :hover:hover {
+    scale: 1.5;
+    transform: translateX(-50px);
+  }
+}
+
+/* styles the page when the width is 390px and less */
+@media screen and (max-width: 390px) {
+  body {
+    max-width: 390px;
+  }
+
+  .container {
     height: 3000px;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
   }
-  .card{
+
+  .card {
     width: 360px;
     height: 500px;
-    
   }
-  input:checked + label {
+
+  input:checked+label {
     width: 360px;
-
-
   }
+
   .imageGallery {
-    grid-template-columns: auto  ;
-
+    grid-template-columns: auto;
   }
+
   .text h4 {
     text-align: start;
   }
+
   #smallText {
     padding: 2rem;
   }
-  #aboutUs{
+
+  #aboutUs {
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
     max-width: 390px;
     justify-content: center;
-    
   }
-  #contact{
+
+  #contact {
     width: 100%;
   }
-  #informations{
+
+  #informations {
     width: 100%;
     align-items: start;
   }
