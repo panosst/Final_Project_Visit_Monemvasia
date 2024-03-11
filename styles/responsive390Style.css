@@ -1,5 +1,5 @@
 /* styles the page when the width is 390px and less */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
     #hero {
       max-width: 390px;
     }
